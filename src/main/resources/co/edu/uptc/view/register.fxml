@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uptc.controller.RegisterController"
+            prefHeight="450.0" prefWidth="600.0">
+    <Button fx:id="backButton" text="Back" onAction="#backButton"/>
+
+    <VBox spacing="10" layoutX="200" layoutY="50">
+        <Label text="REGISTER" style="-fx-font-weight: bold"/>
+        <Label text="Name:"/>
+        <TextField fx:id="nameField" promptText="Name"/>
+        <Label text="Last Name:"/>
+        <TextField fx:id="lastNameField" promptText="Last Name"/>
+        <Label text="Email:"/>
+        <TextField fx:id="emailField" promptText="Email"/>
+        <Label text="User:"/>
+        <TextField fx:id="userField" promptText="User"/>
+        <Label text="Password:"/>
+        <PasswordField fx:id="passwordField" promptText="Password"/>
+        <Label text="Confirm Password:"/>
+        <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password"/>
+        <Button text="Register" onAction="#register"/>
+        <HBox>
+            <Label text="Already have an account?"/>
+            <Button fx:id="loginButton" text="Login" onAction="#loginButton"/>
+        </HBox>
+    </VBox>
+
+</AnchorPane>
